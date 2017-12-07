@@ -1,0 +1,41 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+  @import '../desktop';
+  .head section {
+    max-width: 100%;
+  }
+  .build-img .order-btn {
+    max-width: 360px;
+    position: absolute;
+    bottom: 188px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .formula-img .img-text {
+    right: 70px;
+    bottom: -110px;
+    font-size: 170px;
+  }
+  .registration-container {
+    max-width: 100%;
+  }
+  .registration-info {
+    float: none;
+  }
+  .registration .info {
+    max-width: initial;
+    padding-left: 105px;
+    &:before {
+      display: none;
+    }
+  }
+  .registration nav .nav-list {
+    min-height: inherit;
+    padding-top: 0;
+    display: block;
+    max-width: 100%; 
+    text-align: center; 
+     margin-left: 0; 
+}
+}

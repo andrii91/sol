@@ -1,0 +1,328 @@
+& {
+  main {
+    overflow: hidden;
+  }
+  .nav-btn {
+    width: 26px;
+    height: 2px;
+    position: absolute;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    display: block;
+    float: right;
+    margin-top: 26px;
+    transition: 0.2s;
+    &.open {
+      border-bottom: 0px solid #fff;
+      &:before {
+        transform: rotate(45deg);
+        top: 0;
+        left: 0;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        left: 0;
+        bottom: 0;
+      }
+    }
+    &:before {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top: 2px solid #fff;
+      transition: 0.2s;
+    }
+    &:after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top: 2px solid #fff;
+      transition: 0.2s;
+    }
+  }
+  .mob {
+    display: block;
+  }
+  nav .logo {
+    top: 16px;
+    left: 16px;
+    z-index: 8;
+  }
+  nav {
+    z-index: 999;
+    &.open {
+      background: #1b1b1b;
+    }
+
+  }
+  nav .nav-call {
+    display: none;
+    &.mob {
+      display: block;
+    }
+  }
+  .nav-list {
+    display: none;
+    background-color: #1b1b1b;
+    clear: both;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 155px;
+    li {
+      display: block;
+      .nav-call {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 76px auto 0;
+      }
+    }
+  }
+  .head-info {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .head-title {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 21px;
+  }
+  .head-sub_title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .order-btn {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .title.money-title {
+    max-width: 230px;
+  }
+  .sub_title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .img-text {
+    display: none;
+  }
+  .money-img {
+    img {
+      width: 100%;
+    }
+  }
+  .money-info {
+    padding-left: 25px;
+  }
+  .build {
+    padding: 40px 0;
+    img {
+      width: 100%;
+    }
+  }
+  .build-title  {
+    margin-top: 20px;
+  }
+  .build-img .order-btn {
+    font-size: 12px;
+    position: static;
+    transform: rotateY(0);
+  }
+  .build-img {
+    margin-top: 0;
+    img {
+      display: none;
+    }
+      &:before {
+        display: none;
+      }
+  }
+  .about {
+    padding: 100px 0;
+  }
+  .about .container:before {
+    top: -15px;
+  }
+  .about-item {
+    margin-bottom: 26px;
+  }
+  .about-carousel {
+    padding-bottom: 30px;
+  }
+  .selling-item h4 {
+    letter-spacing: -0.52px;
+    br {
+      display: none;
+    }
+  }
+  .selling-item p {
+    margin-bottom: 16px;
+  }
+  .selling-img {
+    margin-top: 37px;
+    margin-bottom: 35px;
+    img {
+      width: 100%;
+    }
+    &:after {
+    display: none;
+  }
+  }
+  .order-first {
+    -ms-flex-order: -1;
+    order: -1;
+}
+  .selling-item .order-btn {
+    margin-top: 35px;
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .speaker-img {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 190px;
+      
+    }
+  }
+  .speaker {
+    padding-top: 50px;
+  }
+  .speaker-item h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  .speaker-item .speaker-sub_title {
+    font-size: 18px;
+    br {
+      display: none;
+    }
+  }
+  .programs {
+    padding: 50px 0;
+    background-position: right center;
+  }
+  #programs-content .item {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .item-title {
+    margin-bottom: 27px;
+    margin-top: 55px;
+  }
+  #programs-content .item p {
+    br {
+      display: none;
+    }
+  }
+  .formula {
+    padding: 50px 0;
+  }
+  .formula-img {
+    img {
+      width: 100%;
+    }
+  }
+  .mt170 {
+    margin-top: 37px;
+  }
+  .formula-item h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .formula-img.before:before, .formula-img.before:after {
+    display: none;
+  }
+  .formula-info {
+    margin: 0 auto 23px;
+  }
+  .cases .cases-carousel:before {
+    display: none;
+  }
+  .cases .cases-carousel .owl-dots {
+    position: static;
+    
+  }
+  .cases .cases-carousel .owl-dots .owl-dot {
+    margin: 0 14px;
+  }
+  .cases .cases-carousel .owl-nav {
+    right: inherit;
+    left:0;
+    width: 70px;
+}
+  .cases {
+    padding-bottom: 100px; 
+  }
+  .registration {
+    padding: 93px 0 41px;
+  }
+  .registration nav {
+    position: relative;
+    margin-top: 80px;
+    top: 0;
+    display: block;
+    text-align: center;
+    .logo {
+      position: static;
+      
+    }
+    .nav-list {
+      display: block;
+      background-color: transparent;
+      margin-top: 30px;
+      li {
+        line-height: 1.4;
+        .nav-call {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .registration-info {
+    width: 100%;
+  }
+  .registration-img {
+    display: none;
+  }
+  .registration .info { 
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+  .reg {
+    padding: 51px 24px;
+  }
+  footer {
+    text-align: center;
+    p {
+      margin-bottom: 16px;
+    }
+    br {
+      display: none;
+    }
+    .footer-list {
+      margin-bottom: 17px;
+    }
+  }
+  .logo-rezart svg {
+    margin-right: auto;
+  }
+  .modal {
+    padding: 60px 20px;
+  }
+}

@@ -1,0 +1,268 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  //    @import '../mobile';
+  & {
+    main {
+      overflow: hidden;
+    }
+    .nav-btn {
+      width: 26px;
+      height: 2px;
+      position: absolute;
+      border-bottom: 2px solid #fff;
+      position: relative;
+      display: block;
+      float: right;
+      margin-top: 60px;
+      transition: 0.2s;
+      &.open {
+        border-bottom: 0px solid #fff;
+        &:before {
+          transform: rotate(45deg);
+          top: 0;
+          left: 0;
+        }
+        &:after {
+          transform: rotate(-45deg);
+          left: 0;
+          bottom: 0;
+        }
+      }
+      &:before {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 2px solid #fff;
+        transition: 0.2s;
+      }
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 2px solid #fff;
+        transition: 0.2s;
+      }
+    }
+    .mob {
+      display: none;
+    }
+    nav .logo {
+      top: 30px;
+      left: 24px;
+      z-index: 8;
+    }
+    nav {
+      z-index: 999;
+      &.open {
+        background: #1b1b1b;
+      }
+
+    }
+    nav .nav-call {
+      top: 54px;
+      right: 100px;
+      &.mob {
+        display: none;
+      }
+    }
+    .nav-list {
+      display: none;
+      background-color: #1b1b1b;
+      clear: both;
+      text-align: center;
+      padding-bottom: 30px;
+      min-height: 100vh;
+      padding-top: 35vh;
+      li {
+        display: block;
+        .nav-call {
+          position: relative;
+          top: 0;
+          left: 0;
+          margin: 76px auto 0;
+        }
+      }
+    }
+    .title {
+      font-size: 28px;
+    }
+    .sub_title {
+      font-size: 20px;
+    }
+    .money-img {
+      margin-bottom: 110px;
+      img {
+        max-width: 475px;
+      }
+    }
+    .img-text {
+      font-size: 190px;
+      right: 0;
+    }
+    .money-item p {
+      margin-bottom: 50px;
+    }
+    .build {
+      img {
+        width: 100%;
+      }
+    }
+    .container {
+      padding: 0;
+    }
+    .head section {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .build-img{
+      margin-top: 0;
+    }
+    .build-img .order-btn {
+        max-width: 360px;
+        position: absolute;
+        bottom: 0;
+        left: -77%;
+        transform: translateX(0%);
+    }
+    .about-item {
+      margin-bottom: 65px;
+    }
+    .about {
+      padding: 140px 0 136px;
+    }
+    .selling-title {
+      position: relative;
+      z-index: 5;
+      br {
+        display: none;
+      }
+    }
+    .selling-sub_title {
+      position: relative;
+      z-index: 5;
+    }
+    .selling-img {
+      margin-top: 0;
+      &:after {
+        background: url('../images/img-1_large.png') no-repeat;
+        width: 462px;
+        height: 485px;
+        left: -398px;
+        top: -340px;
+        z-index: 0;
+      }
+      &:before {
+          top: -60px;
+          left: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .speaker-img {
+      img {
+        width: 100%;
+      }
+    }
+    .speaker-sub_title {
+      br {
+        display: none;
+      }
+    }
+    .programs {
+        padding: 140px 0 135px;
+        background-position: 46% center;
+    }
+    .programs-sub_title {
+      max-width: 335px;
+    }
+    #programs-content {
+      margin-top: 109px;
+    }
+    .formula-img {
+      img {
+        width: 100%;
+      }
+    }
+    .formula-img .img-text {
+        right: 0;
+        bottom: -110px;
+        font-size: 140px;
+    }
+    .before {
+      text-align: left;
+      img {
+        max-width: 320px;
+      }
+    }
+    .formula {
+      padding: 139px 0 107px;
+    }
+    .cases-title {
+      margin-bottom: 65px;
+    }
+    .cases .cases-carousel:before {
+        position: absolute;
+        top: -145px;
+        left: 96%;
+        transform: translateX(0%);
+    }
+    .cases .cases-carousel .owl-dots {
+          right: initial;
+          left: 0;
+      }
+    .cases {
+      padding-bottom: 140px;
+    }
+    .registration-sub_title {
+      display: inline-block;
+    }
+    .registration-info {
+      float: right;
+    }
+    .registration .info {
+          max-width: 230px;
+    padding-left: 0;
+      &:before {
+        left: -53px;
+      }
+    }
+    .form-title {
+      margin-right: 0;
+      margin-top: -75px;
+    }
+    .reg {
+      padding: 71px 135px;
+    }
+    .registration-container {
+      max-width: 627px;
+    }
+    .registration {
+      nav {
+          .nav-call {
+            right: 24px;
+          }
+        .nav-list {
+          min-height: inherit;
+          padding-top: 0;
+          display: block;
+          max-width: 550px;
+          text-align: left;
+          margin-left: 95px;
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

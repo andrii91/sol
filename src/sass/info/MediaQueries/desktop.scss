@@ -1,0 +1,12 @@
+@import '../../mq';
+
+@media #{$desktop} {
+    @import '../desktop';
+    & {
+	  nav .logo {
+          left: 35px;
+      }
+    }
+}
+
+
